@@ -1,7 +1,4 @@
-body{
-    background-image: url(./img/download.jpg) ;
-    
-}
+
 header{
     display: flex;
     justify-content: center;
@@ -107,4 +104,52 @@ h1 {
 
   
 
+
+  /* INICIANDO A ESTILIZAÇÃO DA PÁGINA DE INSCRIÇÃO*/
+
+.form label{
+    display: block;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+    color: whitesmoke;
+}
+
+.form div{
+    margin: 2px;
+}
+
+.nome{
+    flex-direction: column;
+}
+
+.sexo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: whitesmoke;
+}
+
+button{
+    margin: 25px;
+}
+
+h1 {
+    font-family: "Nerko One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  p {
+    font-family: "Nerko One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
