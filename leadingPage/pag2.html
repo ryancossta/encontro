@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Nerko+One&display=swap" rel="stylesheet">
-
+    <script src="./index.js"></script>
         <style>
             body{
                 background: radial-gradient(circle, #0000FF, #00008B, #000080 );
@@ -41,35 +41,35 @@
 
     <div class="nome">
        
-        <input type="text" value="Nome Completo">
+        <input type="text" value="Nome Completo" id="nome">
     
     </div>
 
     <div class="name_mae">
        
-        <input type="text" value="Nome da mãe">
+        <input type="text" value="Nome da mãe" id="nomeMae">
     </div>
 
 
     <div class="loc">
         
-        <input type="text" value="Endereço">
+        <input type="text" value="Endereço" id="endereco">
     </div>
 
     <div class="tel">
         <label for="">Telefone</label>
-        <input type="number" value="Telefone">
+        <input type="number" value="Telefone" id="tel">
     </div>
 
     <div class="idade">
         <label for="Idade">Idade</label>
-        <input type="number" value="Idade">
+        <input type="number" value="Idade" id="idade">
     </div>
 
 
     <div class="submit">
     
-      <button type="submit" onclick="Enviar" id="enviar">Enviar</button>
+      <button type="submit" onclick="Enviar()" id="enviar">Enviar</button>
         
     </div>
    
