@@ -1,38 +1,48 @@
-function enviarFicha(){
-    let nome = document.getElementById('nome').value;
-    let nomeMae = document.getElementById('nomeMae').value;
-    let endereco = document.getElementById('enderoco').value;
-    let tel = document.getElementById('tel').value; 
-    let idade = document.getElementById('idade').value;
-   
+function Enviar() {
+    // Obter os valores dos campos
+    const nome = document.getElementById('nome').value;
+    const nomeMae = document.getElementById('nomeMae').value;
+    const endereco = document.getElementById('endereco').value;
+    const telefone = document.getElementById('tel').value;
+    const idade = document.getElementById('idade').value;
+    const sexo = document.querySelector('input[name="sexo"]:checked');
 
+    // Validação dos campos
+    const erros = [];
 
-    let qualSexo = document.querySelector('input[name="sexo"]:checked');
+    if (!nome || nome === "Nome Completo") {
+        erros.push("Por favor, preencha seu nome completo.");
+    }
 
-    if(
-        nome == "" ||
-        nomeMae == "" ||
-        endereco  =="" ||
-        tel == ""||
-        idade == " "||
-        !qualSexo
-    ){
-        alert("Por favor, preencha todos os campos antes de enviar.")
+    if (!nomeMae || nomeMae === "Nome da mãe") {
+        erros.push("Por favor, preencha o nome da sua mãe.");
+    }
+
+    if (!endereco || endereco === "Endereço") {
+        erros.push("Por favor, preencha seu endereço.");
+    }
+
+    if (!telefone || telefone === "Telefone") {
+        erros.push("Por favor, preencha seu telefone.");
+    }
+
+    if (!idade || idade < 15 || idade > 28) {
+        erros.push("Você não tem a idade adequada para realizar o Encontro de jovens.");
+    }
+
+    if (!sexo) {
+        erros.push("Por favor, selecione seu sexo.");
+    }
+
+    // Se houver erros, exibir todos de uma vez
+    if (erros.length > 0) {
+        alert(erros.join("\n")); // Exibe todos os erros em uma única mensagem
         return;
     }
-    
-    idade = parseInt(idade)
-    if (idade < 15 || idade > 18){
-        alert("A idade precisa ser entre 15 à 28 anos para realizar o encontro")
-        return;
-    }
-    
-    alert("Inscrição realizada com sucesso" + nome + "!")
- 
+
+    // Se todas as validações passarem, exibir os dados
+    alert(`Inscrição realizada com sucesso!\nNome: ${nome}\nNome da Mãe: ${nomeMae}\nEndereço: ${endereco}\nTelefone: ${telefone}\nIdade: ${idade}\nSexo: ${sexo.value}`);
 }
-
-
-
 
 
 
