@@ -41,7 +41,7 @@ function Enviar() {
     }
 
     // Se todas as validações passarem, exibir os dados
-    alert(`Inscrição realizada com sucesso!\nNome: ${nome}\nNome da Mãe: ${nomeMae}\nEndereço: ${endereco}\nTelefone: ${telefone}\nIdade: ${idade}\nSexo: ${sexo.value}`);
+    alert(`Inscrição realizada com sucesso!`);
 }
 
 

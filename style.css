@@ -107,11 +107,11 @@ h4 {
 
   /* INICIANDO A ESTILIZAÇÃO DA PÁGINA DE INSCRIÇÃO*/
 
-.form label{
+form label{
     display: block;
 }
 
-.form{
+form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +121,7 @@ h4 {
     color: whitesmoke;
 }
 
-.form div{
+form div{
     margin: 2px;
 }
 
